@@ -10,11 +10,11 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:onClick="addDevice"
         android:text="Novo aparelho"
         app:layout_constraintTop_toBottomOf="@+id/device_list"
-        tools:layout_editor_absoluteX="124dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <ListView
         android:id="@+id/device_list"
@@ -22,5 +22,16 @@
         android:layout_height="439dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:onClick="sendMessage"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/device_list" />
 
 </android.support.constraint.ConstraintLayout>
